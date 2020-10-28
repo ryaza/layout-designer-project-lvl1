@@ -44,6 +44,7 @@ body {
     margin: 0 auto;
     position: relative;
     z-index: 1;
+    padding: 100px 0;
 }
 
 .main-bg {
@@ -138,4 +139,56 @@ body {
     margin: 0 auto;
     max-width: 920px;
     filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
+}
+
+.dark-section {
+    margin-top: -150px;
+    background: var(--main-dark);
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card,
+.card-title {
+    width: 350px;
+    background-color: var(--white);
+    box-sizing: border-box;
+    padding: 24px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: var(--dark);
+}
+
+.card-title {
+    background: transparent;
+}
+
+.card .reason-title {
+    margin-top: 16px;
+    margin-bottom: 4px;
+}
+
+.card .description {
+    margin: 0;
+}
+
+.card .number {
+    font-size: 64px;
+}
+
+.text--white {
+    color: var(--white);
+}
+
+.card:hover {
+    background: var(--main);
+    color: var(--white);
+}
+
+.card:hover .reason-title {
+    color: var(--white);
 }
